@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header_wrapper {
+    padding: 12px 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 136px;
+    height: 40px;
+    justify-content: flex-start;
+}
+
+.header_wrapper nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_wrapper nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+}
+
+header .login a {
+    font-size: small;
+    margin-left: 20px;
+
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    border: 2px solid #0070ba;
+    background-color: #0070ba;
+    padding: 8px 24px;
+    border-radius: 50px;
+}
+
+.hero {
+    height: 188px;
+    background-image: linear-gradient(blue, rgb(97, 121, 255));
+    color: #fff;
+    padding: 150px 48px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero div {
+    width: 560px;
+    height: 220px;
+    margin: 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero a {
+    text-decoration: none;
+    color: #0070ba;
+    width: 250px;
+    border: 5px solid #fff;
+    background-color: #fff;
+    padding: 5px 84px;
+    border-radius: 55px;
+}
+
+.threePanel {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0px;
+}
+
+.threePanel .heading {
+    grid-column: span 12;
+}
+
+.threePanel .panel {
+    width: 350px;
+    height: 210px;
+    margin: 10px 15px;
+}
+
+.threePanel h2 {
+    color: #4A4A4A;
+    font-size: 2.5rem;
+}
+
+.threePanel h3 {
+    color: #4A4A4A;
+}
+
+.threePanel p {
+    color: #2c2e2f;
+}
+
+.genericTabs {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0px;
+}
+
+.genericTabs .heading {
+    grid-column: span 12;
+}
+
+.genericTabs .panel {
+    width: 370px;
+    height: 290px;
+    padding: 0px 12px;
+}
+
+.genericTabs h2 {
+    color: #4A4A4A;
+    font-size: 2.5rem;
+}
+
+.genericTabs hr {
+    margin-bottom: 35px;
+}
+
+.genericTabs p {
+    color: #2c2e2f;
+}
+
+.fourPanel {
+    background-image: linear-gradient(blue, rgb(97, 121, 255));
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    padding: 60px 0px;
+}
+
+.fourPanel .heading {
+    grid-column: span 12;
+    text-align: center;
+}
+
+.fourPanel .panel {
+    width: 280px;
+    height: 315px;
+    padding: 0px 12px;
+}
+
+.fourPanel h2 {
+    font-size: 2.5rem;
+}
+
+.pullout {
+    background-color: #f5f7fa;
+    height: 245px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pullout div {
+    justify-content: center;
+}
+
+.pullout div a {
+    text-decoration: none;
+    color: #fff;
+    width: 250px;
+    border: 5px solid #0070ba;
+    background-color: #0070ba;
+    padding: 13px 84px;
+    border-radius: 55px;
+}
+
+.pullout h2 {
+    color: #4A4A4A;
+    font-size: 2,5rem;
+    margin-bottom: 50px;
+}
+
+footer {
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+footer hr {
+    width: 90%;
+}
+
+footer div ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+footer div ul a {
+    text-decoration: none;
+    color: #2c2e2f;
+}
+
+footer div ul {
+    color: #2c2e2f;
+}
+
+@media screen and (max-width: 1320px) {
+
+    .header_wrapper nav a {
+        margin-bottom: 15px;
+    }
+
+    .hero {
+        height: 450px;
+    }
+
+    footer {
+        height: 300px;
+    }
+
+    .threePanel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .genericTabs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fourPanel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fourPanel .panel {
+        width: 70%;
+        height: 165px;
+        padding: 0px 0px;
+    }
+}
