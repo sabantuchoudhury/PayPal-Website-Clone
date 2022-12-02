@@ -19,7 +19,7 @@ body {
 
 header img {
     width: 136px;
-    height: 40px;
+    height: 36px;
     justify-content: flex-start;
 }
 
@@ -30,8 +30,10 @@ header img {
 
 .header_wrapper nav a {
     text-decoration: none;
-    color: black;
-    margin-left: 15px;
+    font-size: 14px;
+    color: #2c2e2f;
+    margin-left: 25px;
+    font-weight: bold;
 }
 
 header .login a {
@@ -39,12 +41,26 @@ header .login a {
     margin-left: 20px;
 
     text-decoration: none;
-    color: #fff;
     width: 100px;
-    border: 2px solid #0070ba;
-    background-color: #0070ba;
+    border: 1px solid #0070ba;
+    
     padding: 8px 24px;
     border-radius: 50px;
+}
+
+header .loginButton {
+    background-color: #fff;
+    color: #0070ba;
+}
+
+header .signUpButton {
+    background-color: #0070ba;
+    color: #fff;
+}
+
+header .signUpButton:hover {
+    border: 1px solid #005f9e;
+    background-color: #005f9e;
 }
 
 .hero {
@@ -161,7 +177,6 @@ header .login a {
 
 .fourPanel .panel {
     width: 280px;
-    height: 315px;
     padding: 0px 12px;
 }
 
@@ -192,9 +207,14 @@ header .login a {
     border-radius: 55px;
 }
 
+.pullout div a:hover {
+    border: 5px solid #005f9e;
+    background-color: #005f9e;
+}
+
 .pullout h2 {
     color: #4A4A4A;
-    font-size: 2,5rem;
+    font-size: 2.5rem;
     margin-bottom: 50px;
 }
 
@@ -229,18 +249,25 @@ footer div ul {
 
 footer div ul a {
     text-decoration: none;
+}
+
+footer div ul a:hover {
+    text-decoration: underline;
+}
+
+footer div .first a {
     color: #2c2e2f;
 }
 
-footer div ul {
-    color: #2c2e2f;
+footer div .second a {
+    color: #687173;
+}
+
+footer div .second {
+    color: #687173;
 }
 
 @media screen and (max-width: 1320px) {
-
-    .header_wrapper nav a {
-        margin-bottom: 15px;
-    }
 
     .hero {
         height: 450px;
@@ -273,7 +300,12 @@ footer div ul {
 
     .fourPanel .panel {
         width: 70%;
-        height: 165px;
         padding: 0px 0px;
+    }
+}
+
+@media screen and (max-width: 837px) {
+    .header_wrapper nav a {
+        margin-bottom: 15px;
     }
 }
